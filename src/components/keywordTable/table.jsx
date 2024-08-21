@@ -77,7 +77,7 @@ export default function Table() {
   ];
 
   let tableRows = products.map((data, i) => {
-    return <TableRow productData={{ ...data, rank: i + 1 }} />;
+    return <TableRow productData={{ ...data, rank: i + 1 }} key={i} />;
   });
 
   return (

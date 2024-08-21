@@ -84,8 +84,8 @@ const productsData = [
   },
 ];
 
-let tableRows = productsData.map((data) => {
-  return <TableRow productData={data} />;
+let tableRows = productsData.map((data, i) => {
+  return <TableRow productData={data} key={i} />;
 });
 
 export default function Table() {
