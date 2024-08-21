@@ -1,11 +1,15 @@
-import DashboardToday from "@/components/DashboardToday";
+import ProductTable from "@/components/productTable";
+import ProductToday from "@/components/productToday";
 import DashboardTop from "@/components/dashboardTop";
+import KeywordTable from "@/components/keywordTable";
 
 export default function Home() {
   return (
-    <main className="px-6">
+    <main className="px-6 bg-gray-100">
       <DashboardTop />
-      <DashboardToday />
+      <ProductToday />
+      <ProductTable />
+      <KeywordTable />
     </main>
   );
 }

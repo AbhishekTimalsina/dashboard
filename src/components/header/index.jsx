@@ -9,7 +9,6 @@ export default function Header() {
           <li className="text-blue-600 bg-blue-100 nav-item">
             <Image src="/img/dashboard.svg" width={22} height={22} />
             <span className="fonttext-sm">Dashboard</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
           </li>
           <li className="nav-item">
             <Image src="/img/ads.svg" width={22} height={22} />
@@ -49,6 +48,7 @@ export default function Header() {
         <div className="flex items-center gap-1">
           <Image src="/img/avatar.png" width={32} height={32} />
           <span className="font-base">Ketan Maharjan</span>
+          <Image src="/img/dropdown.svg" width={22} height={22} />
         </div>
       </div>
     </header>
