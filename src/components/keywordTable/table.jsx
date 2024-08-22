@@ -1,83 +1,13 @@
+"use client";
+
 import TableRow from "./tableRow";
+import { useKeyWordData } from "@/store/Store";
 
 export default function Table() {
-  let products = [
-    {
-      name: "Stay up",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Download for free",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Top deals",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Makeup",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Women",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Shaving Cream",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "This game",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-    {
-      name: "Mattress",
-      popularity: 235643,
-      popularityChange: "5.8%",
-      ctr: "2.4%",
-      cvr: "5.0%",
-      cpa: "$2.4",
-      status: "running",
-    },
-  ];
+  const products = useKeyWordData();
 
   let tableRows = products.map((data, i) => {
-    return <TableRow productData={{ ...data, rank: i + 1 }} key={i} />;
+    return <TableRow keywordData={{ ...data, rank: i + 1 }} key={i} />;
   });
 
   return (

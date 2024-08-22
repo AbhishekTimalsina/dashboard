@@ -1,94 +1,14 @@
-import Image from "next/image";
+"use client";
 import TableRow from "./tableRow";
 
-const productsData = [
-  {
-    name: "Leggings",
-    alts: "Womens wear & women's underwear / Women's bottom / Leggings",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Socks",
-    alts: "Womens wear & women's underwear / Women's bottom / Socks",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Dolls",
-    alts: "oys & hobbies / Dolls & stuffed toys / dolls",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Leggings",
-    alts: "Womens wear & women's underwear / Women's bottom / Leggings",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Socks",
-    alts: "Womens wear & women's underwear / Women's bottom / Socks",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Dolls",
-    alts: "oys & hobbies / Dolls & stuffed toys / dolls",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Leggings",
-    alts: "Womens wear & women's underwear / Women's bottom / Leggings",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-  {
-    name: "Dolls",
-    alts: "oys & hobbies / Dolls & stuffed toys / dolls",
-    popularity: 224353,
-    popularityChange: "2.4%",
-    ctr: "32%",
-    cvr: "42%",
-    cpa: "$34",
-    status: "Running",
-  },
-];
-
-let tableRows = productsData.map((data, i) => {
-  return <TableRow productData={data} key={i} />;
-});
+import { useProductData } from "@/store/Store";
 
 export default function Table() {
+  const productsData = useProductData();
+
+  let tableRows = productsData.map((data, i) => {
+    return <TableRow productData={data} key={i} />;
+  });
   return (
     <table className="w-full mt-6">
       <thead>

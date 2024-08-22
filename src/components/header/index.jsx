@@ -1,4 +1,5 @@
 import Image from "next/image";
+import NavItem from "./nav-item";
 
 export default function Header() {
   return (
@@ -6,43 +7,24 @@ export default function Header() {
       <span className="font-extrabold text-xl text-blue-600">ADSPY+</span>
       <nav>
         <ul className="flex gap-1">
-          <li className="text-blue-600 bg-blue-100 nav-item">
+          <li className="text-blue-600 bg-blue-100 nav-item cursor-pointer">
             <Image src="/img/dashboard.svg" width={22} height={22} />
             <span className="fonttext-sm">Dashboard</span>
           </li>
-          <li className="nav-item">
-            <Image src="/img/ads.svg" width={22} height={22} />
-            <span> Ads</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
-          </li>
 
-          <li className="nav-item">
-            <Image src="/img/products.svg" width={22} height={22} />
-            <span>Products</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
-          </li>
+          <NavItem text={"Ads"} img={"/img/ads.svg"} />
 
-          <li className="nav-item">
-            <Image src="/img/advertisers.svg" width={22} height={22} />
-            <span> Advertisers</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
-          </li>
+          <NavItem text={"Products"} img={"/img/products.svg"} />
 
-          <li className="nav-item">
-            <Image src="/img/shop.svg" width={22} height={22} />
-            <span> Shops</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
-          </li>
+          <NavItem text={"Advertisers"} img="/img/advertisers.svg" />
 
-          <li className="nav-item">
-            <Image src="/img/influence.svg" width={22} height={22} />
-            <span> Influence</span>
-            <Image src="/img/dropdown.svg" width={22} height={22} />
-          </li>
+          <NavItem text={"Shops"} img={"img/shop.svg"} />
+
+          <NavItem text={"Influence"} img="/img/influence.svg" />
         </ul>
       </nav>
       <div className="flex items-center gap-3">
-        <span className="font-medium border text-blue-600 border-blue-600 rounded py-1 px-3">
+        <span className="font-medium border text-blue-600 border-blue-600 rounded py-1 px-3 cursor-pointer">
           Feedbacks
         </span>
         <div className="flex items-center gap-1">
