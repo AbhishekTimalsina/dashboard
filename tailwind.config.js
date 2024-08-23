@@ -23,9 +23,6 @@ module.exports = {
       "5xl": "3.052rem",
     },
     extend: {
-      gridTemplateColumns: {
-        "auto-fit-280": "repeat(auto-fit, minmax(280px, 1fr))",
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

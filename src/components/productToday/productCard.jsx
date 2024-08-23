@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductCard() {
   return (
-    <div className="bg-white rounded-lg pb-3 overflow-hidden max-w-96  ">
+    <div className="bg-white rounded-lg pb-3 overflow-hidden max-w-96 sm:justify-self-center">
       <div className="relative">
         <div>
           <Image

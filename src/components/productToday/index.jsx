@@ -16,7 +16,7 @@ export default function ProductToday() {
       <div className="mt-6">
         <Tabs />
         <div className="mt-6">
-          <div className="grid gap-7 grid-cols-4 xl:gap-4 lg:grid-cols-3 md:grid-cols-2">
+          <div className="grid gap-7 grid-cols-4 xl:gap-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
             {productCards}
           </div>
           <div className="text-center mt-6">
