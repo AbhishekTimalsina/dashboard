@@ -5,7 +5,7 @@ import KeywordTable from "@/components/keywordTable";
 
 export default function Home() {
   return (
-    <main className="px-6 bg-gray-100 xl:px-4 sm:px-3">
+    <main className="px-6 bg-gray-100 pb-40 xl:px-4 sm:px-3">
       <DashboardTop />
       <ProductToday />
       <ProductTable />
