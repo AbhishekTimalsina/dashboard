@@ -19,7 +19,7 @@ export default function Table() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://localhost:3000/api/keyword?platform=${selectInput.platform}&region=${selectInput.region}`
+      `https://dashboard-beryl-phi-95.vercel.app/api/keyword?platform=${selectInput.platform}&region=${selectInput.region}`
     )
       .then((res) => res.json())
       .then((res) => {
