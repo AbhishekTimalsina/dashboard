@@ -6,6 +6,13 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1279px" },
+      lg: { max: "1023px" },
+      md: { max: "767px" },
+      sm: { max: "639px" },
+    },
     fontSize: {
       sm: "13px",
       base: "15px",
@@ -16,6 +23,9 @@ module.exports = {
       "5xl": "3.052rem",
     },
     extend: {
+      gridTemplateColumns: {
+        "auto-fit-280": "repeat(auto-fit, minmax(280px, 1fr))",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

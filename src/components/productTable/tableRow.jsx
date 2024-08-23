@@ -19,7 +19,7 @@ export default function TableRow({ productData }) {
       <td className="py-3">{productData.cpa}</td>
       <td className="py-3">
         <div className="flex justify-center">
-          <span className="bg-green-100 text-green-600 w-4/5 text-center rounded">
+          <span className="bg-green-100 text-green-600 w-4/5 text-center rounded text-sm ">
             {productData.status}
           </span>
         </div>

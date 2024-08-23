@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProductCard() {
   return (
-    <div className="bg-white rounded-lg pb-3 overflow-hidden">
+    <div className="bg-white rounded-lg pb-3 overflow-hidden max-w-96  ">
       <div className="relative">
         <div>
           <Image
@@ -47,10 +47,10 @@ export default function ProductCard() {
             </div>
           </div>
           <div className="flex gap-2">
-            <button className="bg-blue-600 text-white rounded py-1 basis-[90%] ">
+            <button className="bg-blue-600 text-white rounded py-1 basis-[85%] sm:leading-5 sm:text-sm">
               View Product
             </button>
-            <span className="basis-[10%] border flex justify-center rounded-lg border-blue-600 cursor-pointer">
+            <span className="basis-[15%] border flex justify-center rounded-lg border-blue-600 cursor-pointer">
               <Image src="/img/bookmark.svg" width={24} height={24} />
             </span>
           </div>
@@ -64,8 +64,10 @@ export default function ProductCard() {
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-sm text-right">Created On</span>
-            <span className="font-semibold text-sm">August 20, 2024</span>
+            <span className="text-sm text-right ">Created On</span>
+            <span className="font-semibold text-sm text-right">
+              August 20, 2024
+            </span>
           </div>
         </div>
       </div>

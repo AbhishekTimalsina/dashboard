@@ -7,6 +7,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Tiktok",
+    region: "Asia",
   },
   {
     name: "Download for free",
@@ -16,6 +18,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Tiktok",
+    region: "Asia",
   },
   {
     name: "Top deals",
@@ -25,6 +29,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Facebook",
+    region: "Asia",
   },
   {
     name: "Makeup",
@@ -34,6 +40,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Tiktok",
+    region: "Asia",
   },
   {
     name: "Women",
@@ -43,6 +51,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Facebook",
+    region: "America",
   },
   {
     name: "Shaving Cream",
@@ -52,6 +62,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Facebook",
+    region: "Europe",
   },
   {
     name: "This game",
@@ -61,6 +73,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Tiktok",
+    region: "America",
   },
   {
     name: "Mattress",
@@ -70,6 +84,8 @@ const keyWordData = [
     cvr: "5.0%",
     cpa: "$2.4",
     status: "running",
+    platform: "Tiktok",
+    region: "Europe",
   },
 ];
 

@@ -17,7 +17,7 @@ export default function TableRow({ keywordData }) {
       <td className="py-3">{keywordData.cpa}</td>
       <td className="py-3">
         <div className="flex justify-center">
-          <span className="bg-green-100 text-green-600 w-4/5 text-center rounded">
+          <span className="bg-green-100 text-green-600 w-4/5 text-center rounded text-sm">
             {keywordData.status}
           </span>
         </div>
