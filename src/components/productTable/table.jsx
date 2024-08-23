@@ -5,6 +5,7 @@ import TableRow from "./tableRow";
 
 import { useProductData, useSetProduct } from "@/store/Store";
 import Loading from "../loading";
+import Skeleton from "../skeleton/Skeleton";
 
 export default function Table() {
   const [selectInput, setSelectInput] = useState({
@@ -36,7 +37,7 @@ export default function Table() {
         selectInput={selectInput}
         setSelectInput={setSelectInput}
       />
-      <div className="md:overflow-scroll">
+      <div className="md:overflow-x-scroll">
         <table className="w-full mt-6 md:min-w-[95vw]">
           <thead>
             <tr className="bg-blue-600 text-white border-b py-3 text-left">

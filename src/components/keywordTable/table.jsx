@@ -39,7 +39,7 @@ export default function Table() {
         setSelectInput={setSelectInput}
       />
 
-      <div className="md:overflow-scroll">
+      <div className="md:overflow-x-scroll">
         <table className="w-full px-4 mt-6 md:min-w-[95vw]">
           <thead>
             <tr className="bg-blue-600 text-white h-12 border-b py-2 text-left">
@@ -73,7 +73,7 @@ export default function Table() {
             </tr>
           </thead>
 
-          <tbody>{loading ? <Loading /> : tableRows}</tbody>
+          <tbody>{loading ? <Loading dataNum={9} /> : tableRows}</tbody>
         </table>
       </div>
     </div>

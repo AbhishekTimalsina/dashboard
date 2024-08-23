@@ -1,7 +1,7 @@
-export default function Loading() {
-  return (
-    <tr>
-      <th className="relative left-1/2 text-left text-xl top-2">Loading...</th>
-    </tr>
-  );
+import Skeleton from "./skeleton/Skeleton";
+
+export default function Loading({ rowNum = 5, dataNum = 8 }) {
+  let Skeletons = [...Array(rowNum)].map(() => <Skeleton dataNum={dataNum} />);
+
+  return <>{Skeletons}</>;
 }
